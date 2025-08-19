@@ -22,10 +22,26 @@ const dummyTitles=[
 ];
 
 const dummyLastEdited = [
-  "2 days ago", "1 week ago", "3 hours ago", "5 days ago", "2 weeks ago",
-  "1 day ago", "4 hours ago", "3 weeks ago", "10 minutes ago", "8 hours ago",
-  "6 days ago", "2 hours ago", "1 month ago", "15 minutes ago", "12 hours ago",
-  "20 days ago", "7 hours ago", "3 days ago", "9 hours ago", "18 days ago",
+  "2 days ago", 
+  "1 week ago", 
+  "3 hours ago", 
+  "5 days ago", 
+  "2 weeks ago",
+  "1 day ago", 
+  "4 hours ago", 
+  "3 weeks ago", 
+  "10 minutes ago", 
+  "8 hours ago",
+  "6 days ago", 
+  "2 hours ago", 
+  "1 month ago", 
+  "15 minutes ago", 
+  "12 hours ago",
+  "20 days ago", 
+  "7 hours ago", 
+  "3 days ago", 
+  "9 hours ago", 
+  "18 days ago",
 ];
 
 const dummyArticles = dummyTitles.map((title, i) => ({

@@ -23,7 +23,6 @@ export default function Profilepage() {
         />
         <h3>Samia Rahman Arpita</h3>
       </div>
-
       
       <div
         style={{
@@ -48,7 +47,7 @@ export default function Profilepage() {
             samiarahmanarpita@gmail.com
           </a>
         </p>
-        <p>Date of Joining: 2025-07-01</p>
+        <p>Date of Joining: 2025-07-02</p>
       </div>
     </div>
   );

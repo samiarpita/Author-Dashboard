@@ -5,7 +5,6 @@ import { Menu, User, FileText, Home, Moon, Sun } from "lucide-react";
 
 export default function Sidebar({ collapsed, setPage }) {
   const [darkMode, setDarkMode] = useState(false);
-
   const toggleTheme = () => setDarkMode(!darkMode);
 
   useEffect(() => {
@@ -35,7 +34,6 @@ export default function Sidebar({ collapsed, setPage }) {
         </Button>
       </div>
 
-
         <div
           className="d-flex flex-column gap-3"
           style={{ alignItems: collapsed ? "center" : "flex-start" }}
@@ -49,7 +47,6 @@ export default function Sidebar({ collapsed, setPage }) {
           <Button variant="light" onClick={() => setPage("Settings")}>
             <FileText size={16} /> {!collapsed && "Settings"}
           </Button>
-
         </div>
       </div>
 
@@ -58,8 +55,7 @@ export default function Sidebar({ collapsed, setPage }) {
           variant={darkMode ? "outline-light" : "outline-dark"} 
           onClick={toggleTheme}
         >
-            {darkMode ? <Sun size={16}/> : <Moon size={16} />} {!collapsed && (darkMode ? "Light Mode" : "Dark Mode")}
-
+         {darkMode ? <Sun size={16}/> : <Moon size={16} />} {!collapsed && (darkMode ? "Light Mode" : "Dark Mode")}
         </Button>
       </div>
      </div>

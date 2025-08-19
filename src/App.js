@@ -11,7 +11,6 @@ export default function App() {
   const [collapsed, setCollapsed] = useState(false);
   const [page, setPage] = useState("Profile");
   const [darkMode, setDarkMode] = useState(false);
-
   const toggleTheme = () => setDarkMode((prev) => !prev);
 
   useEffect(() => {
@@ -27,8 +26,6 @@ export default function App() {
   return (
     <div className="d-flex" style={{ height: "100vh" }}>
       <Sidebar collapsed={collapsed} setPage={setPage} page={page} />
-      
-  
       <div
         style={{
           flexGrow: 1,
@@ -51,8 +48,7 @@ export default function App() {
          {page === "Profile" && <Profilepage />}
          {page === "Article Lists" && <Articlepage />}
          {page === "Settings" && (
-           <Settings darkMode={darkMode} toggleTheme={toggleTheme} />
-           
+           <Settings darkMode={darkMode} toggleTheme={toggleTheme} />           
          )}
        </main>
       </div>
